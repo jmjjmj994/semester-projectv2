@@ -67,12 +67,7 @@ grid-template-areas: "header""main""footer";
     }
 
 /*NAV*/
-header {
-    position: relative;
-    background-image: url(/mobileimg/mandalas-1084082_640.jpg);
-    background-position: center;
-    background-size: cover;
-}
+
 
 .hamburger-icon {
     color: white;
@@ -257,10 +252,13 @@ margin-top: 1em;
 /*NEWS*/
 .main-news {
 min-height: 100vh;
-background-color: rgb(6, 6, 68);
+background-color: rgba(1, 1, 8, 0.363);
+
+
 }
 .main-news_container {
-    background-color: black;
+    background-color: grey;
+    
 }
 .news-info-text {
     padding: 1em;
@@ -271,14 +269,39 @@ background-color: rgb(6, 6, 68);
     font-size: 1.5rem;
     gap: 0.5em;
 }
-.news-img-resize {
+.subgroup-img-resize {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
 }
 
 
 /*NEWS*/
 
+/*COSMOLOGY*/
+.main-cosmology {
+    min-height: 100vh;
+    background-color: rgb(5, 5, 13);
+    
+    
+}
+.main-cosmology_container {
+    background-color: rgb(14, 1, 1);
+    height: 43rem;
+    
+}
 
+.cosmology-info_text {
+    font-size: 1.5rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+/*COSMOLOGY*/
 
 }
