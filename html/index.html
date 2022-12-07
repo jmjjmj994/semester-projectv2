@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,28 +18,24 @@
     <title>Main</title>
   </head>
   <body>
-    <header>
-      <style>
-        header {
-          background-image: url(/mobileimg/mandalas-1084082_640.jpg);
-    background-position:center;
-    background-size: cover;
-    position: relative;
-        }
-      </style>
+    <header id="index-header-img">
+     
       <input type="checkbox" id="menu-checkbox" />
       <label for="menu-checkbox"
         ><i class="fas fa-bars hamburger-icon"></i
       ></label>
       <nav>
+        <div class="cross-icon-alignment">
+          <a href="index.html"> <i class="fa-solid fa-x cross-icon"></i></a>
+        </div>
         <a href="/html/index.html">Home</a>
-        <a href="#">Visit Us</a>
+        <a href="/html/program.html">Program</a>
         <a href="#">Program</a>
         <a href="#"></a>
       </nav>
     </header>
 
-    <main>
+    <main id="desktop-padding">
       <div class="main-top-section">
         <div class="main-top-text">
           <h1>Welcome to The Community Science Museum</h1>
@@ -50,6 +46,9 @@
             wind, water, and earth to exploring everything from galaxies far
             away to the very building blocks of life itself.
           </p>
+          <a href="/html/program.html" class="program-link">
+            Program<i class="fa-solid fa-caret-right"></i>
+          </a>
 
           <div class="museum-information">
             <div class="opening-hours">
@@ -72,28 +71,30 @@
       </div>
 
       <div class="news-section-title">
-        <p>News</p>
-        <p>Night in the Museum</p>
-        <a href="/html/news.html"
-          ><button class="btn news-btn">
-            Read More<i class="fa-solid fa-caret-right"></i></button
-        ></a>
+        <span class="news-headlines">Night in the museum</span>
+        <span class="news-headlines">Visiting Professor of Aeronautics</span>
+        <span class="news-headlines">Energetica Exhibition on Loan</span>
+
+        <p></p>
+        <a href="/html/news.html" class="news-link">
+          Read More<i class="fa-solid fa-caret-right"></i>
+        </a>
       </div>
 
       <div class="exhibition-section">
         <h1>EXHIBITIONS AT COMMUNITY SCIENCE MUSEUM</h1>
       </div>
-      <div class="exhibition-bottom-container">
+      <div class="exhibition-top-container">
         <div class="cosmology-exhibition-container">
           <div class="exhibition-img">
             <img
-              src="/mobileimg/moon-834635_640.png"
+              src="/mobileimg/moon-834635_640webp.webp"
+              alt="cosmonaut"
               class="exhibition-image-resize"
             />
 
             <div class="cosmology-exhibition-text">
               <h1>COSMOLOGY</h1>
-              <p>space questions</p>
 
               <a href="/html/cosmology.html"
                 >Find out more<i class="fa-solid fa-caret-right"></i
@@ -106,15 +107,15 @@
           <div class="exhibition-img">
             <img
               src="/mobileimg/misael-moreno-14HNtFPbKbs-unsplash.webp"
+              alt="charles darwin"
               class="exhibition-image-resize"
             />
 
             <div class="evolution-exhibition-text">
               <!--Make a base class on this-->
               <h1>EVOLUTION</h1>
-              <p>evolution questions</p>
 
-              <a href="#"
+              <a href="/html/evolution.html"
                 >Find out more<i class="fa-solid fa-caret-right"></i
               ></a>
             </div>
@@ -123,14 +124,17 @@
 
         <div class="ecology-exhibition-container">
           <div class="exhibition-img">
-            <img src="/mobileimg/ecology.jpg" class="exhibition-image-resize" />
+            <img
+              src="/mobileimg/ecologywebp.webp"
+              alt="trees and windmill"
+              class="exhibition-image-resize"
+            />
 
             <div class="ecology-exhibition-text">
               <!--Make a base class on this-->
               <h1>ECOLOGY</h1>
-              <p>ecology questions</p>
 
-              <a href="#"
+              <a href="/html/ecology.html"
                 >Find out more<i class="fa-solid fa-caret-right"></i
               ></a>
             </div>
@@ -138,6 +142,29 @@
         </div>
       </div>
     </main>
-    <footer><h3>FOOTER</h3></footer>
+    <footer id="footer-flex-col1-2">
+   
+   
+      <div class="footer-info-col1">
+      <h2 class="footer-headline">Location</h2>
+      
+        <p class="footer-p">Haakon Sheteligs plass 15</p>
+        <p class="footer-p">5007 Bergen</></p>
+      <hr>
+      </div>
+    <div class="footer-info-col2">
+      <h2 class="footer-headline">Social Media</h2>
+      <i class="fa-brands fa-facebook f-icon"></i>
+      <i class="fa-brands fa-instagram f-icon"></i>
+      <i class="fa-brands fa-twitter f-icon"></i>
+<hr>
+      </div>
+ 
+
+      
+
+
+
+    </footer>
   </body>
 </html>
