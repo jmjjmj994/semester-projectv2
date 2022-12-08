@@ -5,7 +5,7 @@
   margin: 0%;
   list-style-type: none;
   text-decoration: none;
-    
+  
 }
 :root {
     --zilla:#5c03bc;
@@ -20,13 +20,12 @@ html {
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Orbitron', sans-serif;
-
 }
 
 
     body {
         display: grid;
-        background-color: #000000;
+        background-color: #2a2d32;
         color: white;
         grid-template-columns: ;
         grid-template-rows: 30em 1fr auto;
@@ -36,65 +35,19 @@ html {
             }
 
             main {
-                padding:5em;
-                margin: 50em 0;
+                padding:25em;
+                margin: 35em 0;
+                display: grid;
+                grid-template-columns:70 ;
+                grid-template-rows: 70em;
+                min-width: auto;
+                
                  
              }
         /*NAV*/
-
-
-
-
-
-        .hamburger-icon {
-            display: none;
-            color: white;
-            font-size: 2rem;
-            padding: 1em;
-        
-         
-        }
-        
-        .cross-icon {
-            color: white;
-            font-size: 2rem;
-          
-        }
-        .cross-icon-alignment {
-            display: flex;
-            justify-content: flex-start;
-            
-        }
-        
-        
-        nav,
-        #menu-checkbox {
-          display: none;
-        }
-        
-        
-        #menu-checkbox:checked ~ nav {
-            display: block;
-           
-        }
-        
-        
-        
-        nav {
-            position: absolute;
-            background: #0b0202;
-            top:0;
-            width: 100%;
-            height: 30rem;
-            font-size: 2rem;
-        }
-        nav a {
-            display: block;
-            color: white;
-          display: flex;
-          padding: 1em;
-          justify-content: center;
-        }
+.mobile-nav, #menu-checkbox{
+    display: none;
+}
         /*NAV*/
         
         #index-header-img,
@@ -106,8 +59,9 @@ html {
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
+    min-height: 80vh;
 }
-#index-header-img {background-image: url(/desktopimg/lab-512503_1920.jpg); min-height: 75vh;}
+#index-header-img { background-color: black;}
 #news-header-img {background-image: url(/mobileimg/mavis-cw-164128.webp);}
 #program-header-img {background-image: url(/mobileimg/natural-history-museum-2203648_640.jpg);}
 #cosmo-header-img {background-image: url(/mobileimg/cosmonaut.jpg);  }
@@ -121,35 +75,44 @@ html {
           
         
           .main-top-section {
-            font-size: 1rem;
+            font-size: 5rem;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: large;
-            padding: 5em ;
-            background-color: #2a2d32;
-            outline: 1px dotted yellow;
-            line-break:auto;
+            justify-content: flex-start;
+            align-items: flex-start;
            
+            font-size: large;
+            padding: 0;
+            background-color: #1d2126;
+           color: rgb(255, 255, 255);
+            line-break:auto;
+            outline: 2px dotted firebrick;
+            
           }
           .main-top-text {
-           padding: 3em;
-           outline: 1px dotted yellow;
+           height: auto;
+           margin-top:0;
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: column;
+           outline: 1px dotted white;
+          padding: 2em;
            
            
          }
         .museum-information {
-            
+            outline: 1px dotted white;
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
             align-items: flex-start;
-            width: auto;
-            margin-top: 1em;
+            flex-wrap: wrap;
+            margin-top: 0;
             margin-bottom: 1em;
-            gap: 1.5em;
-            outline: 1px dotted yellow;
-            padding: 1em;
+            gap: 1em;
+            height: auto;
+            width: auto;
+           padding: 2em;
+            outline: 1px dotted;
             
             
         }
@@ -166,7 +129,7 @@ html {
             text-align: center;
         }
         p:nth-child(1) {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: bold;
         }
         
@@ -186,10 +149,10 @@ html {
             justify-content:center;
             align-items: center;
             font-size: 2rem;
-       
+            background-color: #0060d5;
             background-position:center;
             background-size: cover;
-            background-color: #000205;  /*Change color*/
+            
            
             
         }
@@ -237,48 +200,63 @@ html {
         }
         
         .exhibition-top-section  {
-            width:100%;
+            width: 100%;
             min-height: 20vh;
            text-align: center;
            display: flex;
            align-items: center;
            
             padding: 1em;
-            background-color: #ff0000;
+            background-color: #000000;
         }
+        @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+        @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+        @media (min-width:641px)  {  
+
+ .exhibition-containers {
+    background-color: orange;
+
+ }       
+        }
+        @media (min-width:961px)  { 
+            main {
+                background-color: green;
+            }
+        }
+        @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+        @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+    
+          
+
         .exhibition-containers {
             width:100%;
-            min-height: 20vh;
+            min-height: 100vh;
            text-align: center;
-           display: flex;
-           align-items: center;
-           flex-direction: column;
-            
-           background-color: #2a2d32;
-        }
         
+           background-color: #34003f;
+           display: grid;
+           grid-template-columns: 31em 31em 31em;
+           grid-template-rows: 35em 35em ;
+             justify-content: center;
+           grid-gap: 5em;
+           
+          
+        }
+        .ai-exhibition-container,
+        .biology-exhibition-container,
         .cosmology-exhibition-container,
         .evolution-exhibition-container,
         .ecology-exhibition-container {
+        margin-top: 8em;
+        min-height: 30rem;
+        background-color: #1d2126;
         
-        min-height: 35rem;
-        width: 34rem;
-        margin-top: 1em;
         }
-        .cosmology-exhibition-container {
-            background-color: #3a3440;
-        }
-        
-        .evolution-exhibition-container {
-            background-color: rgb(125, 72, 105);
-        }
-        .ecology-exhibition-container {
-            background-color: firebrick;
-        }
-        
-        
-        
-        .cosmology-exhibition-text, .evolution-exhibition-text, .ecology-exhibition-text {
+        .ai-exhibition-text,
+        .cosmology-exhibition-text,
+        .evolution-exhibition-text, 
+        .ecology-exhibition-text, 
+        .biology-exhibition-text {
             font-size: 1.5rem;
             display: flex;
             justify-content: center;
@@ -286,8 +264,8 @@ html {
             align-items: center;
         }
         .exhibition-image-resize {
-            width: 34rem; 
-            height: 23em;
+            width: 35rem; 
+            height: 22em;
             
         }
         
@@ -445,7 +423,8 @@ html {
 
 
 
-
+/*  tablet */
+/*  tablet */
 
 
 
@@ -455,7 +434,7 @@ html {
 /*MOBILLE*/
 
 
-@media screen and (max-width: 360px) and (max-height:900px)  {
+@media screen and (max-width: 360px) and (max-height:900px){
 
 *,
 ::before*,
@@ -464,8 +443,8 @@ html {
     margin: 0;
 }
 body {
+    background-color: white;
 display: grid;
-background-color: #1d1e20;
 color: white;
 grid-template-columns: ;
 grid-template-rows: 30em 1fr auto;
@@ -478,6 +457,7 @@ grid-template-areas: "header""main""footer";
 main {
     padding: 0;
     margin: 0;
+    
 }
 
 .hamburger-icon {
@@ -538,10 +518,11 @@ nav a {
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
+    min-height: 35vh;
 }
-#index-header-img {background-image: url(/mobileimg/icebear-2329989_640.jpg); min-height: 30vh;}
+#index-header-img {background-image: url(/mobileimg/icebear-2329989_640.jpg); }
 #news-header-img {background-image: url(/mobileimg/mavis-cw-164128.webp);}
-#program-header-img {background-image: url(/mobileimg/natural-history-museum-2203648_640.jpg);}
+#program-header-img {background-image: url(/mobileimg/natural-history-museum-2203648_640.jpg); }
 #cosmo-header-img {background-image: url(/mobileimg/cosmonaut.jpg);  }
 #eco-header-img {background-image: url(/mobileimg/drought-19478_640.jpg);}
 #evo-header-img {background-image: url(/mobileimg/eugene-zhyvchik-xJY-7gtC38o-unsplash.jpg);}
@@ -552,12 +533,18 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-size: large;
-    padding: 1em;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    color: white;
+    line-break:none;
    
   }
   .main-top-text {
-    margin-top: 1em;
+   
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     
  }
 .museum-information {
@@ -566,10 +553,12 @@ nav a {
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
     width: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+   height: 120rem;
+   
     gap: 1.5em;
+    padding: 0;
     
 }
 
@@ -586,7 +575,7 @@ nav a {
     text-align: center;
 }
 p:nth-child(1) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -891,7 +880,6 @@ tbody {
     font-size: 2rem;
     padding: 1em;
 }
-
 
 /*FOOTER*/
 }
