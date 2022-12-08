@@ -44,13 +44,19 @@ html {
                 
                  
              }
+
+             h1, p, span {
+                font-size: clamp(1rem, 2vw, 2rem); 
+             }
         /*NAV*/
-.mobile-nav, #menu-checkbox{
+.mobile-nav, #menu-checkbox, .mobile-img-resize{
     display: none;
 }
         /*NAV*/
         
-        #index-header-img,
+        #index-header-img {
+            min-height: 80vh;
+        }
 #news-header-img,
 #program-header-img,
 #cosmo-header-img,
@@ -59,7 +65,7 @@ html {
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    min-height: 50vh;
 }
 #index-header-img { background-color: black;}
 #news-header-img {background-image: url(/mobileimg/mavis-cw-164128.webp);}
@@ -68,25 +74,22 @@ html {
 #eco-header-img {background-image: url(/mobileimg/drought-19478_640.jpg);}
 #evo-header-img {background-image: url(/mobileimg/eugene-zhyvchik-xJY-7gtC38o-unsplash.jpg);}
 
-
-
-
-
-          
-        
           .main-top-section {
-            font-size: 5rem;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
            
-            font-size: large;
             padding: 0;
             background-color: #1d2126;
            color: rgb(255, 255, 255);
             line-break:auto;
             outline: 2px dotted firebrick;
             
+          }
+          .main-top-section h1
+          {
+            font-size: 3rem;
+            color: yellow;
           }
           .main-top-text {
            height: auto;
@@ -125,12 +128,13 @@ html {
             display: block;
             width: 10rem;
             color: rgb(0, 0, 0);
-            font-size: 1.5rem;
+            
             text-align: center;
         }
         p:nth-child(1) {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
+            color: yellow;
         }
         
         
@@ -148,7 +152,7 @@ html {
             flex-direction: column;
             justify-content:center;
             align-items: center;
-            font-size: 2rem;
+            
             background-color: #0060d5;
             background-position:center;
             background-size: cover;
@@ -165,6 +169,7 @@ html {
             color: white;
             font-size: 1.5rem;
             text-align: center;
+            color: yellow;
             
         }
         
@@ -202,67 +207,46 @@ html {
         .exhibition-top-section  {
             width: 100%;
             min-height: 20vh;
-           text-align: center;
+          justify-content: center;
            display: flex;
            align-items: center;
            
             padding: 1em;
             background-color: #000000;
         }
-        @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-        @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-        @media (min-width:641px)  {  
-
- .exhibition-containers {
-    background-color: orange;
-
- }       
-        }
-        @media (min-width:961px)  { 
-            main {
-                background-color: green;
-            }
-        }
-        @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-        @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+   
     
-          
-
-        .exhibition-containers {
+        .exhibition-index-wrapper {
             width:100%;
             min-height: 100vh;
            text-align: center;
-        
-           background-color: #34003f;
-           display: grid;
-           grid-template-columns: 31em 31em 31em;
-           grid-template-rows: 35em 35em ;
-             justify-content: center;
-           grid-gap: 5em;
+        display: flex;
+        flex-wrap: wrap;
+           background-color: #0a010c;
+           justify-content: space-around;
+         padding: 5em 0;
            
-          
         }
-        .ai-exhibition-container,
-        .biology-exhibition-container,
-        .cosmology-exhibition-container,
-        .evolution-exhibition-container,
-        .ecology-exhibition-container {
-        margin-top: 8em;
-        min-height: 30rem;
-        background-color: #1d2126;
-        
+
+       /* Exhibition- subgroup */
+        .main-sub-group {
+            height: auto;
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+            
+            
+            
         }
-        .ai-exhibition-text,
-        .cosmology-exhibition-text,
-        .evolution-exhibition-text, 
-        .ecology-exhibition-text, 
-        .biology-exhibition-text {
-            font-size: 1.5rem;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+        .exhibition-sub-container {
+            background-color: #69656d;
+            
         }
+        .exhibition-sub-text
+        {}
+   /*exhibition subgroup */
+      
+        /*  EXHIBITIONS */
         .exhibition-image-resize {
             width: 35rem; 
             height: 22em;
@@ -270,17 +254,22 @@ html {
         }
         
         /*NEWS*/
-        .main-news {
+        .main-news-sub {
         min-height: 100vh;
-        background-color: rgba(1, 1, 8, 0.363);
+        background-color: rgba(36, 36, 76, 0.363);
+        display:flex;
+        flex-wrap:wrap;
         
         
         }
-        .main-news_container {
+        .main-sub_container {
             background-color: grey;
+            width: auto;
+            height: auto;
+            padding: 5em;
             
         }
-        .news-info-text {
+        .news-sub-text {
             padding: 1em;
             display: flex;
             justify-content: center;
@@ -288,96 +277,16 @@ html {
             flex-direction: column;
             font-size: 1.5rem;
             gap: 0.5em;
+            
         }
-        .subgroup-img-resize {
-            width: 100%;
-            height: 25rem;
-        }
-        
-        
-        /*NEWS*/
-        
-        /*COSMOLOGY*/
-        .main-cosmology {
-            min-height: 60vh;
-        }
-        .main-cosmology_container {
-            background-color: #23192c;
+        .desktop-img-resize {
+            width: auto;
             height: auto;
-            padding: 4.5em;
-            
-            
+            display: block;
         }
         
-        .cosmology-info_text {
-            font-size: 1.7rem;
-            padding: 1em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            
-            
-        }
-        
-        
-        /*COSMOLOGY*/
-        /*EVOLUTION*/
-        .main-evolution {
-            min-height: 60vh;
-            
-            
-        }
-        .main-evolution_container {
-            background-color: #24182f;
-            height: auto;
-            padding: 1em;
-            
-            
-        }
-        
-        .evolution-info_text {
-            font-size: 1.7rem;
-            padding: 1.5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            
-            
-        }
-        /*EVOLUTION*/
-        
-        /*ECOLOGY*/
-        .main-ecology {
-            min-height: 60vh;
-            
-            
-            
-        }
-        .main-ecology_container {
-            background-color: #69656d;
-            height: auto;
-            padding: 1em;
-            
-            
-        }
-        
-        .ecology-info_text {
-            font-size: 1.7rem;
-            padding: 1.5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            font-weight:700;
-            
-            
-        }
-        /*ECOLOGY*/
+    
+   
         
         
         /*program*/
@@ -452,7 +361,9 @@ grid-template-areas: "header""main""footer";
         min-height: 100vh;
         
     }
-
+.desktop-img-resize {
+    display: none;
+}
 /*NAV*/
 main {
     padding: 0;
@@ -583,7 +494,7 @@ p:nth-child(1) {
 
 
 
-
+/*news index*/
 
 .news-section-title {
     height: 35vh;
@@ -620,6 +531,7 @@ background-color: orange;
 .fa-caret-right {
     padding: 0.5em;
 }
+/*news index*/
 
 .main-mid-section {
 width: 100%;
@@ -643,6 +555,7 @@ width: 100%;
     flex-direction: column;
     align-items: center;
 }
+/*  exhibitions */
 
 .exhibition-top-section  {
     width:100%;
@@ -653,7 +566,7 @@ width: 100%;
    
     background-color: #000000;
 }
-.exhibition-containers {
+.exhibition-index-wrapper {
     width:100%;
     min-height: 20vh;
    text-align: center;
@@ -661,38 +574,7 @@ width: 100%;
    align-items: center;
    flex-direction: column;
     
-    background-color: #0e121b;
-}
-
-.cosmology-exhibition-container,
-.evolution-exhibition-container,
-.ecology-exhibition-container {
-
-min-height: 40rem;
-width: 34rem;
-margin-top: 1em;
-margin-bottom: 1em;
-}
-.cosmology-exhibition-container {
-    background-color: #3a3440;
-}
-
-.evolution-exhibition-container {
-    background-color: rgb(125, 72, 105);
-}
-.ecology-exhibition-container {
-    background-color: firebrick;
-}
-
-
-
-.cosmology-exhibition-text, .evolution-exhibition-text, .ecology-exhibition-text {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
+    background-color: #0540c8;
 }
 .exhibition-image-resize {
     width: 34rem; 
@@ -700,18 +582,21 @@ margin-bottom: 1em;
     
 }
 
+
+/*  exhibitions */
+
 /*NEWS*/
-.main-news {
+.main-news-sub {
 min-height: 100vh;
 background-color: rgba(1, 1, 8, 0.363);
 
 
 }
-.main-news_container {
+.main-sub_container {
     background-color: grey;
-    
+    padding: 1em;
 }
-.news-info-text {
+.news-sub-text {
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -720,95 +605,22 @@ background-color: rgba(1, 1, 8, 0.363);
     font-size: 1.5rem;
     gap: 0.5em;
 }
-.subgroup-img-resize {
+.mobile-img-resize {
     width: 100%;
-    height: 25rem;
+    height: auto;
+    display: block;
 }
 
 
 /*NEWS*/
 
-/*COSMOLOGY*/
-.main-cosmology {
-    min-height: 60vh;
-}
-.main-cosmology_container {
-    background-color: #23192c;
-    height: auto;
-    padding: 4.5em;
-    
-    
-}
-
-.cosmology-info_text {
-    font-size: 1.7rem;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-    
-}
 
 
-/*COSMOLOGY*/
-/*EVOLUTION*/
-.main-evolution {
-    min-height: 60vh;
-    
-    
-}
-.main-evolution_container {
-    background-color: #24182f;
-    height: auto;
-    padding: 1em;
-    
-    
-}
 
-.evolution-info_text {
-    font-size: 1.7rem;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-    
-}
-/*EVOLUTION*/
 
-/*ECOLOGY*/
-.main-ecology {
-    min-height: 60vh;
-    
-    
-    
-}
-.main-ecology_container {
-    background-color: #69656d;
-    height: auto;
-    padding: 1em;
-    
-    
-}
 
-.ecology-info_text {
-    font-size: 1.7rem;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-weight:700;
-    
-    
-}
-/*ECOLOGY*/
+
+
 
 
 /*program*/
