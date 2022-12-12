@@ -158,7 +158,7 @@ height: auto;
                 width: auto;
                 display: grid;
                 grid-template-columns:auto;
-                grid-template-rows: auto auto auto;
+                grid-template-rows: auto auto;
                 padding:5em;
                 margin: 1em 10em;
                 background-color: var(--index);
@@ -272,7 +272,12 @@ flex-direction: column;
             }
             
            
-            
+            .desktop-img-resize {
+                float: left;
+    width:  100%;
+    height: auto;
+    background-size: cover;
+            }
             
             .index-bottom-section {
               display: grid;
@@ -286,9 +291,8 @@ flex-direction: column;
                 
                
             }
-            
-            
-            .exhibition-col1,
+         
+            .exhibition-col1
             .exhibition-col2,
             .exhibition-col3,
             .exhibition-col4,
@@ -301,7 +305,8 @@ flex-direction: column;
                 align-items: center;
                 flex-wrap: wrap;
               padding: 3em;
-                margin: 3em  0;
+                margin: 5em  0;
+                object-fit: cover;
              
                
             }
