@@ -538,7 +538,7 @@ background-color: var(--index);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 35vh;
+    min-height: 25vh;
 
 }
 
@@ -551,7 +551,7 @@ background-color: var(--index);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 35vh;
+    min-height: 25vh;
 }
 #learning-header-banner {background-image: url(/IMGZ/book-1822474_640.jpg);}
 #news-header-banner {background-image: url(/mobileimg/Animated\ Shape.svg);}
@@ -566,7 +566,7 @@ background-color: var(--index);
     flex-direction: column;
     align-items: center;
     position: absolute;
-    margin: 25em 0;
+    margin: 10em 0;
     padding: 1em; 
     
 }
