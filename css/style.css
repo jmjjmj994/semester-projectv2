@@ -538,7 +538,7 @@ background-color: var(--index);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 25vh;
+    min-height: 30vh;
 
 }
 
@@ -551,7 +551,7 @@ background-color: var(--index);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 25vh;
+    min-height: 30vh;
 }
 #learning-header-banner {background-image: url(/IMGZ/book-1822474_640.jpg);}
 #news-header-banner {background-image: url(/mobileimg/Animated\ Shape.svg);}
