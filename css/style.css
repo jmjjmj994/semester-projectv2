@@ -57,7 +57,10 @@ html {
             /*NAV*/
        
 
+            #learning-header-banner {background-image: url(/IMGZ/pencils-1280558_1920.jpg);}
 
+
+            #learning-header-banner,
             #news-header-banner,
             #cosmo-header-banner,
             #robo-header-banner,
@@ -65,8 +68,8 @@ html {
                 background-position:center;
                 background-size:cover;
                 background-repeat: no-repeat;
-                min-height: 55vh;
-                min-height: 40vh;
+                
+                min-height: 50vh;
             }
             
 
@@ -348,7 +351,7 @@ width: 100%;
 
                 display: grid;
                 grid-template-columns: auto;
-                grid-template-rows: auto auto;
+                grid-template-rows: auto;
                 min-height: 100vh;
                 margin:1em 20em;
                 background-color: var(--index);
@@ -362,7 +365,7 @@ width: 100%;
                     justify-content: flex-start;
                     flex-direction: column;
                     flex-wrap: wrap;
-                   
+                   margin-bottom: 10em;
                 }
               
             
@@ -453,14 +456,29 @@ width: 100%;
             }
            
             
-          
+          /* learning */
+#learning-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    align-items: center;
+    background-color: var(--index);
+    flex-direction: column;
+    margin: 1em 20em;
+  
+}
+          /*learning */
 
+       
         
-            
-            
-        
 
-
+.for-kids, .for-teachers {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 5em;
+}
 
 
 
@@ -523,6 +541,9 @@ background-color: var(--index);
     min-height: 35vh;
 
 }
+
+
+#learning-header-banner, 
 #news-header-banner,
 #cosmo-header-banner,
 #robo-header-banner,
@@ -532,7 +553,7 @@ background-color: var(--index);
     background-repeat: no-repeat;
     min-height: 35vh;
 }
-
+#learning-header-banner {background-image: url(/IMGZ/book-1822474_640.jpg);}
 #news-header-banner {background-image: url(/mobileimg/Animated\ Shape.svg);}
 #cosmo-header-banner {background-image: url(/mobileimg/earth-356059_1280.jpg);  }
 #eco-header-banner {background-image: url(/mobileimg/conservatory-4161955_640.jpg);}
@@ -820,8 +841,28 @@ padding: 0em 0em;
     text-align: center;
 }
 
-/* learning /*
+/* learning */
 
+#learning-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--index);
+    flex-direction: column;
+    margin: 0em 0em;
+  
+}
+
+.for-kids, .for-teachers {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 0em;
+    width: auto;
+    padding: 5em;
+    
+}
 /* learning */
 
 /*FOOTER*/
