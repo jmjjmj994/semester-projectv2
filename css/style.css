@@ -133,7 +133,7 @@ html {
           
     /* INDEX WRAPPER */        
     #index-grid-wrapper {
-    grid-template-columns:auto;
+    grid-template-columns:minmax(50em, 90em);
     grid-template-rows: auto auto;
     justify-content: center;
     height: auto;
@@ -150,7 +150,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: space-around;
-    gap: 5em;
+    gap: 0em;
     width: auto;
     padding: 1em;
 }
@@ -567,7 +567,7 @@ background-color: var(--index);
     height: auto;
     width: auto;
     display: grid;
-    grid-template-columns:auto;
+    grid-template-columns:minmax(20em, 1fr);
     margin: 0em 0em;
     grid-template-rows:repeat(3, auto);
     grid-template-areas: none;}
