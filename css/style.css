@@ -283,7 +283,8 @@ width: 100%;
             
             /*NEWS.html*/
         #main-news {
-            width: auto;
+           display: grid;
+           grid-template-columns: minmax(25em, 1fr);
         }
             
             .news-card {
@@ -311,10 +312,12 @@ width: 100%;
 
                 background-image: url(/IMGZ/reading-7334749.png);
               
+              
             }
             .news-sub_container1, .news-sub_container2 {
-               display: grid;
+             
               display: flex;
+              flex-wrap: wrap;
               justify-content: flex-start;
               background-position: center;
               background-size:cover;
@@ -322,7 +325,7 @@ width: 100%;
                margin: 1em 20em;
               min-height: 100vh;
               background-color: var(--index);
-              padding: 0em 20em;
+              padding: 0em 0em;
               width: auto;
             }
        
